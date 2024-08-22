@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+
+:root {
+    --color-primario: #000000;
+    --color-secundario: #F6F6F6;
+    --color-terciario: #22D4FD;
+    --color-hover: #272727;
+
+    --fuente-krona: 'Krona One', sans-serif;
+    --fuente-montserrat: 'Montserrat', sans-serif;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 100px;
+    background-color: #dccee8;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    
+    
+}
+
+
+.container {
+    max-width: 500px;
+    width: 100%;
+    background: #000000;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #000000;
+    margin-bottom: 90px;
+    font-family: var(--fuente-krona);
+    position: absolute; /* O usa relative si prefieres una posición relativa al contenedor */
+    top: 70px; /* Posición desde el borde superior */
+    left: 2px; /* Posición desde el borde izquierdo */
+    margin: 6px; /* Elimina el margen por defecto para ajustar la posición */
+    padding: 20px; /* Ajusta el relleno si es necesario */
+    display: flex;
+      
+}
+h2 {
+    text-align: center;
+    color: #000000;
+    margin-bottom: 50px;
+    font-family: var(--fuente-montserrat);
+    position: center; /* O usa relative si prefieres una posición relativa al contenedor */
+    top: 70px; /* Posición desde el borde superior */
+    left: 20px; /* Posición desde el borde izquierdo */
+    margin: 50px; /* Elimina el margen por defecto para ajustar la posición */
+    padding: 20px; /* Ajusta el relleno si es necesario */
+    display: flex;
+      
+}
+
+
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10%;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 100px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1.5rem;
+    background: #f9f9f9;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #205e4f;
+    color: #fff;
+    margin: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #1a0329;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+@media (max-width: 600px) {
+    .button-group {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    button {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    
+  
+  
+}
